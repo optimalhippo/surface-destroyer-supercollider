@@ -1,6 +1,6 @@
 (
 SynthDef(\synth1, {
-	arg freq = 440, atk = 1, rel = 1, amp = 1, pan = 0.5,
+	arg freq = 440, atk = 1, rel = 1, amp = 1, pan = 0.5;
 	var sig, env;
 	sig = SinOsc.ar(freq);
 	env = EnvGen.kr(Env([0,1,0], [atk, rel], [1,1]), doneAction: 2);
